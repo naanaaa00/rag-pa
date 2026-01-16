@@ -1,0 +1,20 @@
+fastapi>=0.110
+uvicorn[standard]>=0.29
+
+# LangChain (stabil)
+langchain==0.2.*
+langchain-community==0.2.*
+langchain-experimental==0.0.59
+langchain-postgres>=0.0.6
+
+# Database & Vector Store
+psycopg[binary]>=3.1
+sqlalchemy>=2.0
+pgvector>=0.2.4
+langchain-postgres>=0.0.9
+
+# LLM & utils
+python-multipart>=0.0.9
+pydantic>=2.6
+pydantic-settings>=2.2
+python-dotenv>=1.0
