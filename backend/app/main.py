@@ -1,6 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware # Tambahkan ini
 from app.api.routes.ingest import router as ingest_router
+from app.api.routes.chat import router as chat_router
 from app.core.langsmith import init_langsmith
 
 init_langsmith()
@@ -17,3 +18,4 @@ app.add_middleware(
 )
 
 app.include_router(ingest_router)
+app.include_router(chat_router)
